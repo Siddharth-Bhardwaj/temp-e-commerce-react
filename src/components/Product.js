@@ -13,11 +13,11 @@ export default class Product extends Component {
                     <ProductConsumer>
                         {(value) => (
                             <div
-                                className='img-container p-5'
+                                className='img-container p-3'
                                 onClick={() => value.handleDetail(id)}
                             >
                                 <Link to='/details'>
-                                    <img
+                                    <ProductImg
                                         src={img}
                                         alt='product'
                                         className='card-img-top'
@@ -69,6 +69,11 @@ Product.propTypes = {
         inCart: PropTypes.bool,
     }).isRequired,
 };
+
+const ProductImg = styled.img`
+    height: 300px;
+    object-fit: contain;
+`;
 
 const ProductWrapper = styled.div`
     .card {
