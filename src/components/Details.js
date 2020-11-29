@@ -10,7 +10,6 @@ export default class Details extends Component {
                 {(value) => {
                     const {
                         id,
-                        company,
                         img,
                         info,
                         price,
