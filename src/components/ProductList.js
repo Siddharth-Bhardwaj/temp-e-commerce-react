@@ -9,7 +9,7 @@ export default class ProductList extends Component {
             <React.Fragment>
                 <div className='py-5'>
                     <div className='container'>
-                        <Title name='Life of' title='Jui Patel'></Title>
+                        <Title name='The Life of' title='Jui Patel'></Title>
                         <div className='row'>
                             <ProductConsumer>
                                 {(value) => {
@@ -24,6 +24,9 @@ export default class ProductList extends Component {
                                 }}
                             </ProductConsumer>
                         </div>
+                        <h3 className='text-muted text-center mt-2'>
+                            Because you deserve anything and everything
+                        </h3>
                     </div>
                 </div>
             </React.Fragment>
